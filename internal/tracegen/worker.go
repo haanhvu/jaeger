@@ -64,6 +64,14 @@ func (w worker) simulateOneTrace() {
 	attrs := []attribute.KeyValue{
 		attribute.String("peer.service", "tracegen-server"),
 		attribute.String("peer.host.ipv4", "1.1.1.1"),
+		attribute.String("additional.key.1", "additional.value.1"),
+		attribute.String("additional.key.2", "additional.value.2"),
+		attribute.String("additional.key.3", "additional.value.3"),
+		attribute.String("additional.key.4", "additional.value.4"),
+		attribute.String("additional.key.5", "additional.value.5"),
+		attribute.String("additional.key.6", "additional.value.6"),
+		attribute.String("additional.key.7", "additional.value.7"),
+		attribute.String("additional.key.8", "additional.value.8"),
 	}
 	if w.debug {
 		attrs = append(attrs, attribute.Bool("jaeger.debug", true))
